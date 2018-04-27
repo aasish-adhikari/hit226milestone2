@@ -1,0 +1,158 @@
+@import 'iconstyle.css';
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+.navigation-wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menubar-list ul {
+  margin-left: -20px;
+  padding: 0;
+  list-style-position: inside;
+  list-style-type: none;
+}
+
+.nav-fixed {
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background: #003b46;
+  display: flex;
+  align-items: center;
+}
+
+.nav-collapse {
+  width: 250px;
+  margin: -16px 0 0 0;
+  padding: 0;
+}
+
+.nav-collapse ul li {
+  color: #ffffff;
+  background: #2a3132;
+  padding: 15px;
+}
+
+.menubar-list {
+  margin: 0;
+}
+
+.menubar-menu{
+    height: 0px;
+    overflow: hidden;
+    padding: 0px;
+    transition: height .6s ease-in;
+}
+.expand__menu {
+  float: right;
+}
+
+.slider-wrapper {
+  width: 250px;
+  transform: translateX(-255px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.slided.slider-wrapper {
+  transform: translateX(0%);
+  height: 100%;
+}
+
+.showExpanded.menubar-menu {
+  height: 135px;
+}
+
+.show.menubar-menu {
+  height: 100px;
+}
+
+.expand__menu {
+  font-size: 14px;
+  float: right;
+  padding-right: 25px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 480px) {
+  .navicon-button {
+    display: none;
+  }
+  .navigation-wrapper {
+    width: 100%;
+    height: 49px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    background: #003b46;
+  }
+  .nav-collapse {
+    width: auto;
+    margin-left: auto;
+    margin-right: 60px;
+    transform: translateX(0%);
+
+  }
+  .nav-collapse ul {
+    padding: 0;
+    margin-left: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .nav-collapse ul li{
+    background: #003b46;
+  }
+  .expand__menu {
+    padding-left: 30px;
+    float: right;
+    cursor: pointer;
+  }
+  .menubar-menu{
+    height: auto;
+  }
+  .menubar-list ul{
+    margin-top: 15px;
+    margin-left: -16px;
+    display: none;
+    position: absolute;
+    width: 150px;
+  }
+  .menubar-list:hover {
+    background: #c05805;
+  }
+
+.menubar-list:hover .expand__menu {
+    transform: rotate(180deg);
+  }
+
+  .menubar-list:hover ul{
+    display: block;
+  }
+  .menubar-menu li:hover{
+    background: #f69454;
+  }
+}

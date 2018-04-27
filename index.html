@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Navigation Design</title>
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  </head>
+<body>
+<header class="navigation-wrapper">
+  <div class="nav-fixed">
+    <a id="navicon-arrow" class="navicon-button" onclick="openFunction()">
+       <div class="navicon"></div>
+   </a>
+  <h1 class="logo"><a  class="nav-mobile-link" href="">Nav Design</a></h1>
+</div>
+<div id="display01">
+<nav class="slider-wrapper nav-collapse">
+
+        <ul class="nav__menubar">
+            <li class="menubar-list">
+                <a class="menubar-list-link" href="/locations">LOCATIONS</a>
+                <a class="expand__menu" onclick="showMenu(0)">&#9660;</a>
+                <ul class="menubar-menu">
+                    <li><a class="menu-menuitem" href="/darwin">Darwin</a></li>
+                    <li><a class="menu-menuitem" href="/palmerston">Palmerston</a></li>
+                    <li><a class="menu-menuitem" href="/katherine">Katherine</a></li>
+                </ul>
+
+            </li>
+            <li class="menubar-list">
+                <a class="menubar-list-link" href="about">ABOUT</a>
+                <a class="expand__menu" onclick="showMenu(1)">&#9660;</a>
+                <ul class="menubar-menu">
+                    <li><a class="menu-menuitem" href="/history">History</a></li>
+                    <li><a class="menu-menuitem" href="/team">Team</a></li>
+                </ul>
+            </li>
+            <li class="menubar-list">
+                <a class="menubar-list-link" href="media">MEDIA</a>
+                <a class="expand__menu" onclick="showMenu(2)">&#9660;</a>
+                <ul class="menubar-menu">
+                    <li><a class="menu-menuitem" href="/blog">Blog</a></li>
+                    <li><a class="menu-menuitem" href="/photogallery">Photo Gallery</a></li>
+                    <li><a class="menu-menuitem" href="/reports">Reports</a></li>
+                </ul>
+            </li>
+        </ul>
+</nav>
+  </div>
+</header>
+<script type="text/javascript" src="script/main.js"></script>
+</body>
+</html>
